@@ -1,41 +1,85 @@
-# currencyspa
+Конечно, вот более краткая версия документации с упоминанием атомарного дизайна:
 
-This template should help get you started developing with Vue 3 in Vite.
+```markdown
+# CurrencySPA
 
-## Recommended IDE Setup
+CurrencySPA - это одностраничное приложение (SPA) для просмотра курсов валют и управления избранными валютами. Оно создано с использованием Vue.js 3, Tailwind CSS и Pinia.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Установка
 
-## Customize configuration
+Для установки CurrencySPA выполните следующие шаги:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/your-repo/currencyspa.git
+   ```
 
-## Project Setup
+2. Перейдите в каталог проекта и установите зависимости:
+   ```bash
+   cd currencyspa
+   yarn install
+   ```
 
-```sh
-yarn
-```
+3. Запустите сервер разработки:
+   ```bash
+   yarn dev
+   ```
 
-### Compile and Hot-Reload for Development
+4. Откройте браузер и перейдите по адресу `http://localhost:3000`, чтобы просмотреть приложение.
 
-```sh
-yarn dev
-```
+## Особенности
 
-### Compile and Minify for Production
+- Просмотр курсов валют.
+- Управление избранными валютами.
+- Используется атомарный дизайн для компонентов.
 
-```sh
-yarn build
-```
+## Браузерное расширение для CORS
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+CurrencySPA использует браузерное расширение для включения CORS (Cross-Origin Resource Sharing) для выполнения запросов к внешним API. Убедитесь, что установили расширение CORS в вашем браузере перед запуском CurrencySPA.
+Cors Everywhere https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/
 
-```sh
-yarn test:unit
-```
+## Технологии
 
-### Lint with [ESLint](https://eslint.org/)
+- Vue.js 3
+- Tailwind CSS
+- Pinia
 
-```sh
-yarn lint
+## Структура проекта
+
+- `src`
+  - `assets`
+  - `components` (атомарный дизайн)
+    - `atoms`
+    - `molecules`
+    - `organisms`
+  - `pages`
+  - `router`
+  - `stores`
+
+## Скрипты
+
+- `yarn dev`
+- `yarn build`
+- `yarn preview`
+- `yarn test:unit`
+- `yarn lint`
+- `yarn format`
+
+## Зависимости
+
+- `vue`
+- `vue-router`
+- `pinia`
+- `axios`
+- `sass`
+- `tailwindcss`
+
+## DevDependencies
+
+- `vite`
+- `eslint`
+- `prettier`
+- `@vue/test-utils`
+- `vitest`
+
 ```
