@@ -1,4 +1,3 @@
-<!-- Ваш текущий компонент -->
 <template>
     <div class="p-4 border rounded shadow-sm">
       <div class="flex justify-between items-center mb-2">

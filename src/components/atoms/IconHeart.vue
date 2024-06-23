@@ -10,7 +10,7 @@
   import { computed } from 'vue';
   import { useRatesStore } from '../../stores/ratesStore';
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-//   import { far } from '@fortawesome/free-regular-svg-icons'; // Импортируем иконку
+
   
   export default {
     components: {
