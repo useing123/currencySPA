@@ -1,18 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import MainPage from '../pages/MainPage.vue';
+import FavoritesPage from '../pages/FavoritesPage.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
-  }
-  // Добавьте другие маршруты здесь
-]
+    component: MainPage,
+  },
+  {
+    path: '/favorites',
+    name: 'Favorites',
+    component: FavoritesPage,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

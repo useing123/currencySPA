@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <CurrencyRates />
+    <header class="bg-blue-600 p-4 text-white">
+      <nav class="container mx-auto flex justify-between">
+        <div>
+          <router-link to="/" class="text-2xl font-bold">Currency Rates</router-link>
+        </div>
+        <div>
+          <router-link to="/" class="mr-4">Home</router-link>
+          <router-link to="/favorites">Favorites</router-link>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto p-4">
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
-import CurrencyRates from '/home/useing123/Desktop/halykTestWork/currencySPA/src/components/orgranisms/CurrencyRates.vue'
-
 export default {
-  components: {
-    CurrencyRates
-  }
-}
+  name: 'App',
+};
 </script>
 
 <style>
-/* Глобальные стили */
+/* Add any global styles here */
 </style>
